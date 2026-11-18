@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="มูดวงดูดวง (MooDuang DuDuang) แอปพลิเคชันสำหรับผู้ที่สนใจเรื่องดวงและคำทำนาย เพื่อความบันเทิงและการสำรวจมุมมองของตนเอง">
+  <meta name="theme-color" content="#241b3b">
+  <title>มูดวงดูดวง | MooDuang DuDuang</title>
+  <style>
+    :root{--ink:#211a35;--muted:#6e6680;--purple:#6c4bd4;--pink:#f1a6ce;--cream:#fffaf5;--line:#eee7f4}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}
+    a{color:inherit}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+    header{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:800;font-size:1.12rem;text-decoration:none;letter-spacing:.2px}
+    .brand span{color:var(--purple)} nav{display:flex;gap:22px;flex-wrap:wrap}
+    nav a{text-decoration:none;color:var(--muted);font-size:.95rem}nav a:hover{color:var(--purple)}
+    .hero{position:relative;overflow:hidden;border-radius:30px;padding:76px 7%;background:radial-gradient(circle at 85% 15%,#f9cde5 0,transparent 28%),linear-gradient(135deg,#eee8ff,#fff0f6 65%,#fffaf5);min-height:390px}
+    .eyebrow{display:inline-block;padding:6px 13px;border:1px solid #d9cafa;border-radius:99px;color:#5a43a9;background:#ffffffa8;font-size:.85rem}
+    h1{font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.15;margin:18px 0 14px;letter-spacing:-1.5px}
+    h1 span{color:var(--purple)}.hero p{max-width:620px;color:#625a70;font-size:1.1rem;margin:0 0 26px}
+    .button{display:inline-block;background:var(--purple);color:white;text-decoration:none;padding:12px 22px;border-radius:13px;font-weight:700;box-shadow:0 8px 22px #6c4bd433}
+    .button.secondary{background:white;color:var(--purple);border:1px solid #ded4f4;box-shadow:none;margin-left:8px}
+    .sparkle{position:absolute;right:9%;top:22%;font-size:clamp(5rem,14vw,10rem);filter:drop-shadow(0 14px 16px #9d76c444)}
+    section{padding:64px 0}.section-title{text-align:center;font-size:2rem;margin:0 0 8px}.section-lead{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 30px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 30px #38245b08}
+    .icon{font-size:2rem}.card h3{margin:10px 0 5px}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .notice{background:#f4efff;border:1px solid #e5dcfa;border-radius:20px;padding:24px;color:#5b5270}
+    .notice strong{color:var(--ink)}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.92rem}
+    .footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{color:var(--purple);text-decoration:none}
+    @media(max-width:700px){header{align-items:flex-start;flex-direction:column}nav{gap:14px}.hero{padding:48px 25px}.sparkle{right:5%;top:auto;bottom:12%;opacity:.45}.hero p{max-width:100%}.cards{grid-template-columns:1fr}.button.secondary{margin:10px 0 0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#" aria-label="มูดวงดูดวง หน้าแรก">🔮 <span>มูดวงดูดวง</span></a>
+      <nav aria-label="เมนูหลัก">
+        <a href="#about">เกี่ยวกับแอป</a>
+        <a href="#how">การใช้งาน</a>
+        <a href="#privacy">ความเป็นส่วนตัว</a>
+        <a href="#contact">ติดต่อ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="eyebrow">MooDuang DuDuang · Android Application</div>
+        <h1 id="hero-title">เปิดมุมมองใหม่<br><span>ไปกับเรื่องดวง</span></h1>
+        <p>มูดวงดูดวง คือแอปพลิเคชันสำหรับผู้ที่สนใจเรื่องดวงและคำทำนาย ใช้งานเพื่อความบันเทิงและเป็นอีกหนึ่งมุมมองในการสำรวจเรื่องราวในชีวิตประจำวัน</p>
+        <!-- ใส่ลิงก์ Google Play เมื่อมี URL หน้าร้านค้าแล้ว -->
+        <a class="button" href="#about">รู้จักแอปเพิ่มเติม</a>
+        <a class="button secondary" href="https://sftraktorfs.github.io/privacy-policy/" target="_blank" rel="noopener">นโยบายความเป็นส่วนตัว</a>
+        <div class="sparkle" aria-hidden="true">✨</div>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">เกี่ยวกับมูดวงดูดวง</h2>
+        <p class="section-lead">พื้นที่สำหรับผู้ที่สนใจเรื่องดวงและคำทำนาย ออกแบบให้เข้าถึงข้อมูลภายในแอปได้สะดวก</p>
+        <div class="cards">
+          <article class="card"><div class="icon">🌙</div><h3>เรื่องดวงและคำทำนาย</h3><p>สำรวจเนื้อหาเกี่ยวกับดวงตามรูปแบบและฟังก์ชันที่มีให้บริการภายในแอป</p></article>
+          <article class="card"><div class="icon">📱</div><h3>ใช้งานบน Android</h3><p>แอปพลิเคชันสำหรับอุปกรณ์ Android โดยผู้ใช้ควรตรวจสอบรายละเอียดและความเข้ากันได้ก่อนติดตั้ง</p></article>
+          <article class="card"><div class="icon">🔐</div><h3>ข้อมูลและความเป็นส่วนตัว</h3><p>อ่านนโยบายความเป็นส่วนตัวเพื่อทำความเข้าใจแนวทางการจัดการข้อมูลของแอป</p></article>
+        </div>
+      </section>
+
+      <section id="how">
+        <h2 class="section-title">การใช้งานอย่างเหมาะสม</h2>
+        <p class="section-lead">เนื้อหาเกี่ยวกับดวงและคำทำนายมีไว้เพื่อความบันเทิงและเป็นแนวทางประกอบการพิจารณาเท่านั้น</p>
+        <div class="notice"><strong>โปรดทราบ:</strong> คำทำนายหรือข้อมูลภายในแอปไม่ใช่คำแนะนำทางการแพทย์ กฎหมาย การเงิน หรือวิชาชีพ และไม่ควรใช้แทนการตัดสินใจโดยอาศัยข้อเท็จจริงหรือคำแนะนำจากผู้เชี่ยวชาญ</div>
+      </section>
+
+      <section id="privacy">
+        <h2 class="section-title">ความเป็นส่วนตัว</h2>
+        <p class="section-lead">ผู้ใช้สามารถอ่านรายละเอียดเกี่ยวกับการเก็บรวบรวม ใช้ และจัดการข้อมูลได้จากนโยบายความเป็นส่วนตัวของแอป</p>
+        <p style="text-align:center"><a class="button" href="https://sftraktorfs.github.io/privacy-policy/" target="_blank" rel="noopener">อ่าน Privacy Policy</a></p>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">ติดต่อผู้พัฒนา</h2>
+        <p class="section-lead">หากพบปัญหาในการใช้งานหรือมีข้อเสนอแนะ สามารถติดต่อผู้พัฒนาผ่านช่องทางด้านล่าง</p>
+        <div class="notice" style="text-align:center">GitHub: <a href="https://github.com/SFtraktorFS/muduang_duduang" target="_blank" rel="noopener">SFtraktorFS / muduang_duduang</a><br>
+        อีเมลติดต่อ: <strong>[กรอกอีเมลสำหรับติดต่อผู้พัฒนา]</strong></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-row">
+        <div>© <span id="year">2026</span> MooDuang DuDuang. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="https://sftraktorfs.github.io/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a>
+          <a href="./terms-of-service.html">Terms of Service</a>
+          <a href="https://github.com/SFtraktorFS/muduang_duduang" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
